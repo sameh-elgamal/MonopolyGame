@@ -42,6 +42,27 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Bank.cs" />
+    <Compile Include="GameExceptions\GameException.cs" />
+    <Compile Include="GameObjects\ActionTile.cs" />
+    <Compile Include="GameObjects\Board.cs" />
+    <Compile Include="GameObjects\Dice.cs" />
+    <Compile Include="GameObjects\GameActions\ChancePickACard.cs" />
+    <Compile Include="GameObjects\GameActions\CommunityChestPickCard.cs" />
+    <Compile Include="GameObjects\GameActions\PayRent.cs" />
+    <Compile Include="GameObjects\GameActions\ReceiveMoneyAction.cs" />
+    <Compile Include="GameObjects\GameActions\SimpleGameAction.cs" />
+    <Compile Include="GameObjects\IBank.cs" />
+    <Compile Include="GameObjects\IBoard.cs" />
+    <Compile Include="GameObjects\GameActions\IGameAction.cs" />
+    <Compile Include="GameObjects\IPlayer.cs" />
+    <Compile Include="GameObjects\ITile.cs" />
+    <Compile Include="GameObjects\SimpleTile.cs" />
+    <Compile Include="GameObjects\Tile.cs" />
+    <Compile Include="GameObjects\UKBoard.cs" />
+    <Compile Include="IMonpolyGame.cs" />
+    <Compile Include="MonopolyGame.cs" />
+    <Compile Include="GameObjects\Player.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
