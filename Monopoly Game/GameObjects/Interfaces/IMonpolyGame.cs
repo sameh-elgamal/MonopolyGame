@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Monopoly_Game
+namespace Monopoly_Game.GameObjects.Interfaces
 {
     public interface IMonopolyGame
     {

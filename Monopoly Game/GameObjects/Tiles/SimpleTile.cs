@@ -4,8 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Monopoly_Game.GameObjects.GameActions;
+using Monopoly_Game.GameObjects.Interfaces;
 
-namespace Monopoly_Game.GameObjects
+namespace Monopoly_Game.GameObjects.Tiles
 {
     public class SimpleTile : Tile
     {
@@ -15,7 +16,6 @@ namespace Monopoly_Game.GameObjects
 
         public override void Perfom()
         {
-            throw new NotImplementedException();
         }
 
         public override string ToString()

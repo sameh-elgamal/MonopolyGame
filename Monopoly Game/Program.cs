@@ -1,4 +1,5 @@
 ﻿using Monopoly_Game.GameObjects;
+using Monopoly_Game.GameObjects.Interfaces;
 using System;
 using System.Collections.Generic;
 using System.Linq;

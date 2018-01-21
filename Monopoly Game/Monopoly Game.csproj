@@ -44,7 +44,7 @@
   <ItemGroup>
     <Compile Include="Bank.cs" />
     <Compile Include="GameExceptions\GameException.cs" />
-    <Compile Include="GameObjects\ActionTile.cs" />
+    <Compile Include="GameObjects\Tiles\ActionTile.cs" />
     <Compile Include="GameObjects\Board.cs" />
     <Compile Include="GameObjects\Dice.cs" />
     <Compile Include="GameObjects\GameActions\ChancePickACard.cs" />
@@ -52,16 +52,16 @@
     <Compile Include="GameObjects\GameActions\PayRent.cs" />
     <Compile Include="GameObjects\GameActions\ReceiveMoneyAction.cs" />
     <Compile Include="GameObjects\GameActions\SimpleGameAction.cs" />
-    <Compile Include="GameObjects\IBank.cs" />
-    <Compile Include="GameObjects\IBoard.cs" />
+    <Compile Include="GameObjects\Interfaces\IBank.cs" />
+    <Compile Include="GameObjects\Interfaces\IBoard.cs" />
     <Compile Include="GameObjects\GameActions\IGameAction.cs" />
-    <Compile Include="GameObjects\IPlayer.cs" />
-    <Compile Include="GameObjects\ITile.cs" />
-    <Compile Include="GameObjects\ProperityTile.cs" />
-    <Compile Include="GameObjects\SimpleTile.cs" />
-    <Compile Include="GameObjects\Tile.cs" />
+    <Compile Include="GameObjects\Interfaces\IPlayer.cs" />
+    <Compile Include="GameObjects\Interfaces\ITile.cs" />
+    <Compile Include="GameObjects\Tiles\ProperityTile.cs" />
+    <Compile Include="GameObjects\Tiles\SimpleTile.cs" />
+    <Compile Include="GameObjects\Tiles\Tile.cs" />
     <Compile Include="GameObjects\UKBoard.cs" />
-    <Compile Include="IMonpolyGame.cs" />
+    <Compile Include="GameObjects\Interfaces\IMonpolyGame.cs" />
     <Compile Include="MonopolyGame.cs" />
     <Compile Include="GameObjects\Player.cs" />
     <Compile Include="Program.cs" />
@@ -70,5 +70,6 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

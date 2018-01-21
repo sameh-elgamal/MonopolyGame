@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Monopoly_Game.GameObjects
+namespace Monopoly_Game.GameObjects.Interfaces
 {
     public interface IPlayer
     {

@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using Monopoly_Game.GameObjects.Interfaces;
+using System.Collections.Generic;
 
 namespace Monopoly_Game.GameObjects
 {
