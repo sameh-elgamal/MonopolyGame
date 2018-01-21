@@ -10,7 +10,7 @@ namespace Monopoly_Game.GameObjects.GameActions
     {
 
 
-        public ChancePickACard(string ActionLable, IMonopolyGame game) : base(ActionLable, game)
+        public ChancePickACard(string actionKey, string ActionLabel, IMonopolyGame game) : base(actionKey, ActionLabel, game)
         {
 
         }

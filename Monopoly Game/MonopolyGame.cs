@@ -45,7 +45,7 @@ namespace Monopoly_Game.GameObjects
         /// </summary>
         /// <param name="index"></param>
         /// <returns></returns>
-        public ITile getTileAt(int index)
+        public ITile GetTileAt(int index)
         {
             return board.getTileAt(index);
         }
@@ -86,7 +86,7 @@ namespace Monopoly_Game.GameObjects
         }
 
 
-        public List<IPlayer> getPlayers()
+        public List<IPlayer> GetPlayers()
         {
             return players;
         }
@@ -110,7 +110,7 @@ namespace Monopoly_Game.GameObjects
 
         public int Roll()
         {
-            return dice.roll();
+            return dice.Roll();
         }
     }
 }

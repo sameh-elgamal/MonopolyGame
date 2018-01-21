@@ -23,7 +23,7 @@ namespace Monopoly_Game.GameObjects
         }
 
 
-        public int roll()
+        public int Roll()
         {
             return random.Next(1, maxValue + 1);
         }

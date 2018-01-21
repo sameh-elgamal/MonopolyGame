@@ -20,23 +20,23 @@ namespace Monopoly_Game.GameObjects
         public override void CreateBoard()
         {
             ITile tile = new ActionTile("GO Collect £200", this);
-            IGameAction action = new ReceiveMoneyAction("Collect £200", 200, getGame());
-            tile.addAction(action);
+            IGameAction action = new ReceiveMoneyAction("Get Money", "Collect £200", 200, GetGame());
+            tile.AddAction(action);
             base.GetTiles().Add(tile);
 
             tile = new SimpleTile("Community Chest", this);
-            action = new CommunityChestPickCard("Pick Community Chest Card", getGame());
-            tile.addAction(action);
+            action = new CommunityChestPickCard("Pick Community Card", "Pick Community Chest Card", GetGame());
+            tile.AddAction(action);
             base.GetTiles().Add(tile);
 
             tile = new ActionTile("Income Tax (Pay 10% or $200)", this);
-            action = new ReceiveMoneyAction("Income Tax (Pay 10% or $200)", -200, getGame());
-            tile.addAction(action);
+            action = new ReceiveMoneyAction("Get Money", "Income Tax (Pay 10% or $200)", -200, GetGame());
+            tile.AddAction(action);
             base.GetTiles().Add(tile);
 
             tile = new SimpleTile("Chance", this);
-            action = new ChancePickACard("Pick Chance Card", getGame());
-            tile.addAction(action);
+            action = new ChancePickACard("Pick Chance Card", "Pick Chance Card", GetGame());
+            tile.AddAction(action);
             base.GetTiles().Add(tile);
 
             tile = new SimpleTile("Jail/Just Visiting", this);
@@ -47,23 +47,23 @@ namespace Monopoly_Game.GameObjects
 
 
             tile = new SimpleTile("Chance", this);
-            action = new ChancePickACard("Pick Chance Card", getGame());
-            tile.addAction(action);
+            action = new ChancePickACard("Pick Chance Card", "Pick Chance Card", GetGame());
+            tile.AddAction(action);
             base.GetTiles().Add(tile);
 
             tile = new SimpleTile("Community Chest", this);
-            action = new CommunityChestPickCard("Pick Community Chest Card", getGame());
-            tile.addAction(action);
+            action = new CommunityChestPickCard("Pick Community Card", "Pick Community Chest Card", GetGame());
+            tile.AddAction(action);
             base.GetTiles().Add(tile);
 
             tile = new SimpleTile("Chance", this);
-            action = new ChancePickACard("Pick Chance Card", getGame());
-            tile.addAction(action);
+            action = new ChancePickACard("Pick Chance Card", "Pick Chance Card", GetGame());
+            tile.AddAction(action);
             base.GetTiles().Add(tile);
 
             tile = new ActionTile("Super Tax (Pay £100)", this);
-            action = new ReceiveMoneyAction("Super Tax(Pay £100)", -100, getGame());
-            tile.addAction(action);
+            action = new ReceiveMoneyAction("Get Money", "Super Tax(Pay £100)", -100, GetGame());
+            tile.AddAction(action);
             base.GetTiles().Add(tile);
 
 

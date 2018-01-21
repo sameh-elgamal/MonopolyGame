@@ -9,12 +9,12 @@ namespace Monopoly_Game.GameObjects
 {
     public interface ITile
     {
-        string GetLable();
-        int getPrice();
+        string GetLabel();
+        int GetPrice();
         void Buy(ITile tile);
         void Sell(ITile tile);
         void Perfom();
-        void addAction(IGameAction action); 
+        void AddAction(IGameAction action); 
         List<IGameAction> GetActions();
 
     }

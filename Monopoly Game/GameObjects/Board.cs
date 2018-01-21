@@ -23,7 +23,7 @@ namespace Monopoly_Game.GameObjects
         /// return the Game linked to the board.
         /// </summary>
         /// <returns> referece to the Monopoly Game</returns>
-        public IMonopolyGame getGame()
+        public IMonopolyGame GetGame()
         {
             return this.game;
         }
@@ -64,7 +64,7 @@ namespace Monopoly_Game.GameObjects
             {
                 
                 sb.Append("["+ i+"] "+tile.ToString());
-                foreach (IPlayer player in this.game.getPlayers())
+                foreach (IPlayer player in this.game.GetPlayers())
                 {
                     if(player.GetPosition() == i)
                     {

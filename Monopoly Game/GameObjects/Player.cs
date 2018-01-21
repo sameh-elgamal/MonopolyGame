@@ -16,7 +16,7 @@ namespace Monopoly_Game.GameObjects
         private IMonopolyGame game; 
             
 
-        public IMonopolyGame getGame()
+        public IMonopolyGame GetGame()
         {
             return this.game;
         }
@@ -83,7 +83,7 @@ namespace Monopoly_Game.GameObjects
             int location = position + moves;
             position = (location >= tileCount ? location - tileCount : location);
 
-            ITile tile = game.getTileAt(position);
+            ITile tile = game.GetTileAt(position);
             tile.Perfom();
         }
 
@@ -193,7 +193,7 @@ namespace Monopoly_Game.GameObjects
             if (game == null || tileIndex > game.CountTiles())
                 return;
             this.position = tileIndex;
-            ITile tile = game.getTileAt(position);
+            ITile tile = game.GetTileAt(position);
             tile.Perfom();
 
         }

@@ -8,19 +8,26 @@ namespace Monopoly_Game.GameObjects.GameActions
 {
     public abstract class SimpleGameAction : IGameAction
     {
-        private string actionLable;
+        private string actionKey;
+        private string actionLabel;
         private ITile tile;
         private IMonopolyGame game;
 
-        public SimpleGameAction(string actionLabel,  IMonopolyGame game)
+        public SimpleGameAction(string actionKey, string actionLabel,  IMonopolyGame game)
         {
-            this.actionLable = actionLabel;
+            this.actionKey = actionKey;
+            this.actionLabel = actionLabel;
             this.game = game;
+        }
+
+        public string GetActionKey()
+        {
+            return actionKey;
         }
 
         public string GetActionText()
         {
-            return actionLable;
+            return actionLabel;
         }
 
         public IMonopolyGame GetGame()

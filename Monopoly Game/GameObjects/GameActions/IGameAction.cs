@@ -8,6 +8,7 @@ namespace Monopoly_Game.GameObjects.GameActions
 {
     public interface IGameAction
     {
+        string GetActionKey();
         void Perform();
         string GetActionText();
         ITile GetTile();

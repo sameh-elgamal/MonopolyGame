@@ -12,7 +12,7 @@ namespace Monopoly_Game.GameObjects.GameActions
       
         private int money;      // about of money transfer from/to the bank.
 
-        public ReceiveMoneyAction(string ActionLable, int money, IMonopolyGame game): base(ActionLable, game)
+        public ReceiveMoneyAction(string actionKey, string ActionLabel, int money, IMonopolyGame game): base(actionKey, ActionLabel, game)
         {
             this.money = money;
         }

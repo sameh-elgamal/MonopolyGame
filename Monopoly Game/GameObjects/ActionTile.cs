@@ -10,7 +10,7 @@ namespace Monopoly_Game.GameObjects
     public class ActionTile : Tile
     {
         
-        public ActionTile(string lable, IBoard board): base(lable,board)
+        public ActionTile(string label, IBoard board): base(label,board)
         {
             
         }
@@ -29,7 +29,7 @@ namespace Monopoly_Game.GameObjects
         {
 
             StringBuilder sb = new StringBuilder();
-            sb.Append(base.GetLable());
+            sb.Append(base.GetLabel());
             return sb.ToString();
           
 

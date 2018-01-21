@@ -15,8 +15,8 @@ namespace Monopoly_Game
         int CountTiles();
         IPlayer GetCurrentPlayer();
         IBank GetBank();
-        ITile getTileAt(int index);
-        List<IPlayer> getPlayers();
+        ITile GetTileAt(int index);
+        List<IPlayer> GetPlayers();
         int Roll();
         IBoard GetBoard();
 

@@ -19,7 +19,7 @@ namespace MonopolyTest
 
             Assert.AreEqual("Mido", Mido.GetName());
             Assert.AreEqual(200, Mido.GetBalance());
-            Assert.IsInstanceOfType(Mido.getGame(), mp.GetType());
+            Assert.IsInstanceOfType(Mido.GetGame(), mp.GetType());
             Assert.AreEqual(0, Mido.GetPosition());
 
 
@@ -27,11 +27,11 @@ namespace MonopolyTest
 
             Assert.AreEqual(1, mp.CountPlayer());
 
-            Assert.IsNull(Sameh.getGame());
+            Assert.IsNull(Sameh.GetGame());
             Assert.AreEqual( 0 , Sameh.GetBalance());
             Assert.AreEqual("Player", Sameh.GetName());
             Sameh.Join(mp);
-            Assert.IsInstanceOfType(Sameh.getGame(), mp.GetType());
+            Assert.IsInstanceOfType(Sameh.GetGame(), mp.GetType());
             Assert.AreEqual(2, mp.CountPlayer());
 
         }
@@ -54,17 +54,17 @@ namespace MonopolyTest
             sameh.Join(mp);
             Assert.AreEqual(2, mp.CountPlayer());
             mp.RemovePlayer(mido);
-            Assert.IsNull(mido.getGame());
+            Assert.IsNull(mido.GetGame());
             Assert.AreEqual(1, mp.CountPlayer());
             sameh.Leave();
             Assert.AreEqual(0, mp.CountPlayer());
-            Assert.IsNull(sameh.getGame());
+            Assert.IsNull(sameh.GetGame());
 
             Monopoly_Game.GameObjects.Player Dodo = new Monopoly_Game.GameObjects.Player("Dodo", 200, mp);
             Assert.AreEqual(1, mp.CountPlayer());
-            Assert.IsNotNull(Dodo.getGame());
+            Assert.IsNotNull(Dodo.GetGame());
             Dodo.Leave();
-            Assert.IsNull(Dodo.getGame());
+            Assert.IsNull(Dodo.GetGame());
             Assert.AreEqual(0, mp.CountPlayer());
 
 

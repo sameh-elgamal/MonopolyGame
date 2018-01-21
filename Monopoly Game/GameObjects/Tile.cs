@@ -10,33 +10,33 @@ namespace Monopoly_Game.GameObjects
     public abstract class Tile : ITile
     {
 
-        private string lable;
+        private string label;
         private IBoard board;
-        private List<IGameAction> availableActions;
+        private List<IGameAction> availabelActions;
 
         /// <summary>
         /// Creator function for the Tile class. 
-        /// this class represent a Tile with lable and linked to a board.
+        /// this class represent a Tile with label and linked to a board.
         /// this class is simple - Classified classes will be needed to extend the 
         /// base class
         /// 
         /// </summary>
-        /// <param name="lable"></param>
+        /// <param name="label"></param>
         /// <param name="board"></param>
-        public Tile(string lable, IBoard board)
+        public Tile(string label, IBoard board)
         {
-            this.lable = lable;
+            this.label = label;
             this.board = board;
-            this.availableActions = new List<IGameAction>();
+            this.availabelActions = new List<IGameAction>();
 
         }
 
-        public void addAction(IGameAction action)
+        public void AddAction(IGameAction action)
         {
-            if (availableActions.Contains(action))
+            if (availabelActions.Contains(action))
                 return;
             action.linkTile(this);
-            availableActions.Add(action);
+            availabelActions.Add(action);
         }
 
         public void Buy(ITile tile)
@@ -46,15 +46,15 @@ namespace Monopoly_Game.GameObjects
 
         public List<IGameAction> GetActions()
         {
-            return availableActions;
+            return availabelActions;
         }
 
-        public string GetLable()
+        public string GetLabel()
         {
-            return this.lable;
+            return this.label;
         }
 
-        public int getPrice()
+        public int GetPrice()
         {
             throw new NotImplementedException();
         }

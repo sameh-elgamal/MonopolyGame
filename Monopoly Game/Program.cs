@@ -14,6 +14,7 @@ namespace Monopoly_Game
             MonopolyGame mp = new MonopolyGame();
             IPlayer sameh = new Player("Sameh", 1500, mp);
             IPlayer mido = new Player("Mido", 1500, mp);
+            IPlayer jeff = new Player("Jeff", 1500, mp);
             Console.WriteLine(mp.GetBoard().ToString());
             Console.ReadLine();
 
@@ -21,7 +22,7 @@ namespace Monopoly_Game
             {
                 sameh.PlayTurn();
                 mido.PlayTurn();
-
+                jeff.PlayTurn();
             }
 
         }

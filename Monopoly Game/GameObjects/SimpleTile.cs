@@ -9,7 +9,7 @@ namespace Monopoly_Game.GameObjects
 {
     public class SimpleTile : Tile
     {
-        public SimpleTile(string lable, IBoard board) : base(lable, board)
+        public SimpleTile(string label, IBoard board) : base(label, board)
         {
         }
 
@@ -18,7 +18,7 @@ namespace Monopoly_Game.GameObjects
         public override string ToString()
         {
             StringBuilder sb = new StringBuilder();
-            sb.Append(base.GetLable());
+            sb.Append(base.GetLabel());
             return sb.ToString();
         }
 
