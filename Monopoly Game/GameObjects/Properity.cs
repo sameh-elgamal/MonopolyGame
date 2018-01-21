@@ -33,6 +33,12 @@ namespace Monopoly_Game.GameObjects
             HotelCount = 0;
         }
 
+
+        public int GetPrice()
+        {
+            return this.price;
+        }
+
         public int CalculateRent()
         {
             int cost = 0;
