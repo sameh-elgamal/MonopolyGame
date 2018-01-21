@@ -9,7 +9,14 @@ namespace Monopoly_Game.GameObjects.Interfaces
     public interface IPlayer
     {
         int GetPosition();
+        /// <summary>
+        /// Linkes player to a monopoly game
+        /// </summary>
+        /// <param name="game">Game to link to</param>
         void Join(IMonopolyGame game);
+        /// <summary>
+        /// Removes player from game
+        /// </summary>
         void Leave();
         void Jump(int moves);
         void Jump(ITile tile);
