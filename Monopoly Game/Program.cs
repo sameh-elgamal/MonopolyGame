@@ -22,11 +22,8 @@ namespace Monopoly_Game
             for (int i=0; i<20; i++)
             {
                 sameh.PlayTurn();
-                Console.Clear();
                 mido.PlayTurn();
-                Console.Clear();
                 jeff.PlayTurn();
-                Console.Clear();
             }
 
         }
