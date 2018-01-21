@@ -155,27 +155,131 @@ namespace Monopoly_Game.GameObjects
             tile = new SimpleTile("Free Parking", this);
             base.GetTiles().Add(tile);
 
+            deed = new ProperityDeed(18, 90, 250, 700, 875, 1050, 150, 150, 110);
+            properity = new Properity(220, deed, ColorSets.red);
+            tile = new ProperityTile("Strand", this, properity);
+            action = new PayRent("Pay Rent", tile, GetGame());
+            tile.AddAction(action);
+            GetTiles().Add(tile);
+
 
             tile = new SimpleTile("Chance", this);
             action = new ChancePickACard("Pick Chance Card", GetGame());
             tile.AddAction(action);
             base.GetTiles().Add(tile);
+
+
+
+            deed = new ProperityDeed(18, 90, 250, 700, 875, 1050, 150, 150, 110);
+            properity = new Properity(220, deed, ColorSets.red);
+            tile = new ProperityTile("Fleet Street", this, properity);
+            action = new PayRent("Pay Rent", tile, GetGame());
+            tile.AddAction(action);
+            GetTiles().Add(tile);
+
+            deed = new ProperityDeed(20, 100, 300, 750, 925, 1100, 150, 150, 120);
+            properity = new Properity(240, deed, ColorSets.red);
+            tile = new ProperityTile("Trafalgar Square", this, properity);
+            action = new PayRent("Pay Rent", tile, GetGame());
+            tile.AddAction(action);
+            GetTiles().Add(tile);
+
+
+            //TODO: change tile to utility 
+            tile = new SimpleTile("Fenchurch St. Station", this);
+            base.GetTiles().Add(tile);
+
+            deed = new ProperityDeed(22, 110, 330, 800, 975, 1150, 150, 150, 150);
+            properity = new Properity(260, deed, ColorSets.yellow);
+            tile = new ProperityTile("Leicester Square", this, properity);
+            action = new PayRent("Pay Rent", tile, GetGame());
+            tile.AddAction(action);
+            GetTiles().Add(tile);
+
+            deed = new ProperityDeed(22, 110, 330, 800, 975, 1150, 150, 150, 150);
+            properity = new Properity(260, deed, ColorSets.yellow);
+            tile = new ProperityTile("Coventry Street", this, properity);
+            action = new PayRent("Pay Rent", tile, GetGame());
+            tile.AddAction(action);
+            GetTiles().Add(tile);
+
+
+            //TODO: change tile to utility 
+            tile = new SimpleTile("Water Works", this);
+            base.GetTiles().Add(tile);
+
+
+            deed = new ProperityDeed(22, 120, 360, 850, 1025, 1200, 140, 140, 150);
+            properity = new Properity(280, deed, ColorSets.yellow);
+            tile = new ProperityTile("Piccadilly", this, properity);
+            action = new PayRent("Pay Rent", tile, GetGame());
+            tile.AddAction(action);
+            GetTiles().Add(tile);
+
+            //TODO: change tile to utility 
+            tile = new SimpleTile("Go to Jail", this);
+            GetTiles().Add(tile);
+
+
+            deed = new ProperityDeed(26, 130, 390, 900, 1100, 1275, 150, 150, 200);
+            properity = new Properity(300, deed, ColorSets.green);
+            tile = new ProperityTile("Regent Street", this, properity);
+            action = new PayRent("Pay Rent", tile, GetGame());
+            tile.AddAction(action);
+            GetTiles().Add(tile);
+
+
+            deed = new ProperityDeed(26, 130, 390, 900, 1100, 1275, 150, 150, 200);
+            properity = new Properity(300, deed, ColorSets.green);
+            tile = new ProperityTile("Oxford Street", this, properity);
+            action = new PayRent("Pay Rent", tile, GetGame());
+            tile.AddAction(action);
+            GetTiles().Add(tile);
+
 
             tile = new SimpleTile("Community Chest", this);
             action = new CommunityChestPickCard("Pick Community Chest Card", GetGame());
             tile.AddAction(action);
             base.GetTiles().Add(tile);
 
+
+            deed = new ProperityDeed(28, 150, 450, 1000, 1200, 1400, 160, 160, 200);
+            properity = new Properity(320, deed, ColorSets.green);
+            tile = new ProperityTile("Bond Street", this, properity);
+            action = new PayRent("Pay Rent", tile, GetGame());
+            tile.AddAction(action);
+            GetTiles().Add(tile);
+
+            //TODO: change tile to utility 
+            tile = new SimpleTile("Liverpool Street Station", this);
+            base.GetTiles().Add(tile);
+
             tile = new SimpleTile("Chance", this);
             action = new ChancePickACard("Pick Chance Card", GetGame());
             tile.AddAction(action);
             base.GetTiles().Add(tile);
+
+
+            deed = new ProperityDeed(35, 175, 500, 1100, 1300, 1500, 200, 200, 175);
+            properity = new Properity(350, deed, ColorSets.blue);
+            tile = new ProperityTile("Park Lane", this, properity);
+            action = new PayRent("Pay Rent", tile, GetGame());
+            tile.AddAction(action);
+            GetTiles().Add(tile);
+
+
 
             tile = new ActionTile("Super Tax (Pay £100)", this);
             action = new ReceiveMoneyAction("Super Tax(Pay £100)", -100, GetGame());
             tile.AddAction(action);
             base.GetTiles().Add(tile);
 
+            deed = new ProperityDeed(50, 200, 600, 1400, 1700, 2000, 200, 200, 200);
+            properity = new Properity(400, deed, ColorSets.blue);
+            tile = new ProperityTile("Mayfair", this, properity);
+            action = new PayRent("Pay Rent", tile, GetGame());
+            tile.AddAction(action);
+            GetTiles().Add(tile);
 
         }
 
