@@ -9,7 +9,7 @@ namespace Monopoly_Game.GameObjects.GameActions
     public class CommunityChestPickCard : SimpleGameAction
     {
 
-        public CommunityChestPickCard(string actionKey, string ActionLabel, IMonopolyGame game): base(actionKey, ActionLabel, game)
+        public CommunityChestPickCard(string ActionLabel, IMonopolyGame game): base(ActionLabel, game)
         {
 
         }

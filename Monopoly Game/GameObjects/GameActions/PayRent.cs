@@ -9,7 +9,7 @@ namespace Monopoly_Game.GameObjects.GameActions
     public class PayRent : SimpleGameAction
     {
 
-        public PayRent(string actionKey, string actionLabel, ITile tile, IMonopolyGame game): base(actionKey, actionLabel, game)
+        public PayRent(string actionLabel, ITile tile, IMonopolyGame game): base(actionLabel, game)
         {
 
         }

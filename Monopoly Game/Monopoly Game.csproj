@@ -57,6 +57,7 @@
     <Compile Include="GameObjects\GameActions\IGameAction.cs" />
     <Compile Include="GameObjects\IPlayer.cs" />
     <Compile Include="GameObjects\ITile.cs" />
+    <Compile Include="GameObjects\ProperityTile.cs" />
     <Compile Include="GameObjects\SimpleTile.cs" />
     <Compile Include="GameObjects\Tile.cs" />
     <Compile Include="GameObjects\UKBoard.cs" />
