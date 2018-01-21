@@ -33,7 +33,12 @@ namespace Monopoly_Game.GameObjects.GameActions
             return tile;
         }
 
-        public void linkTile(ITile tile)
+        public bool IsAllowed()
+        {
+            return true;
+        }
+
+        public void LinkTile(ITile tile)
         {
             this.tile = tile;
         }

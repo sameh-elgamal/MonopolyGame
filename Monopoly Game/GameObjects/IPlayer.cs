@@ -23,7 +23,8 @@ namespace Monopoly_Game.GameObjects
         void Receive(int money);
         void unlink();
         void PlayTurn();
-
+        void RecieveMoney(int amount);
+        void PayMoney(int amount);
 
     }
 }

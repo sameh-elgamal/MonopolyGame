@@ -13,18 +13,16 @@ namespace Monopoly_Game.GameObjects
         {
         }
 
-
+        public override void Perfom()
+        {
+            throw new NotImplementedException();
+        }
 
         public override string ToString()
         {
             StringBuilder sb = new StringBuilder();
             sb.Append(base.GetLabel());
             return sb.ToString();
-        }
-
-        public override void Perfom()
-        {
-           
         }
     }
 }

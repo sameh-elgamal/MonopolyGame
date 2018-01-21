@@ -14,10 +14,25 @@ namespace Monopoly_Game.GameObjects.GameActions
 
         }
 
-    
+        /// <summary>
+        /// 
+        /// </summary>
         public override void Perform()
         {
-            throw new NotImplementedException();
+            //Check if tile is not owned
+            if (!GetTile().IsOwned())
+                return;
+
+            //Check if tile is owned by current player
+            IPlayer owner = GetTile().GetOwner();
+            IPlayer player = GetGame().GetCurrentPlayer();
+            if (owner == player)
+                return;
+
+            int rent = GetTile().GetRent();
+
+            player.PayMoney(rent);
+            owner.RecieveMoney(rent);
         }
     }
 }

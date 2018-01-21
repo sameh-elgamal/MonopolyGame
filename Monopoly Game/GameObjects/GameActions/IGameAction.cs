@@ -11,8 +11,8 @@ namespace Monopoly_Game.GameObjects.GameActions
         void Perform();
         string GetActionText();
         ITile GetTile();
-        void linkTile(ITile tile);
+        void LinkTile(ITile tile);
         IMonopolyGame GetGame();
-
+        bool IsAllowed();
     }
 }

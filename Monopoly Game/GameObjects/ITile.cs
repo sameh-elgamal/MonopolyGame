@@ -11,11 +11,13 @@ namespace Monopoly_Game.GameObjects
     {
         string GetLabel();
         int GetPrice();
-        void Buy(ITile tile);
+        void Buy(IPlayer owner);
         void Sell(ITile tile);
         void Perfom();
         void AddAction(IGameAction action); 
         List<IGameAction> GetActions();
-
+        IPlayer GetOwner();
+        bool IsOwned();
+        int GetRent();
     }
 }

@@ -24,6 +24,11 @@ namespace Monopoly_Game.GameObjects
             tile.AddAction(action);
             base.GetTiles().Add(tile);
 
+            tile = new ProperityTile("Old Kent", this);
+            action = new PayRent("Pay Rent", tile, GetGame());
+            tile.AddAction(action);
+            GetTiles().Add(tile);
+
             tile = new SimpleTile("Community Chest", this);
             action = new CommunityChestPickCard("Pick Community Chest Card", GetGame());
             tile.AddAction(action);

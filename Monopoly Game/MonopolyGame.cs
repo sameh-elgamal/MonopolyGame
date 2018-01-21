@@ -7,6 +7,7 @@ namespace Monopoly_Game.GameObjects
     {
         private List<IPlayer> players;
         private IBoard board;
+        //TODO: Cycle players after each turn
         private int currentPlayer;
         private IBank Bank;
         private Dice dice;

@@ -9,10 +9,10 @@ namespace Monopoly_Game.GameObjects
 {
     public abstract class Tile : ITile
     {
-
+        private IPlayer owner; 
         private string label;
         private IBoard board;
-        private List<IGameAction> availabelActions;
+        private List<IGameAction> actions;
 
         /// <summary>
         /// Creator function for the Tile class. 
@@ -27,26 +27,27 @@ namespace Monopoly_Game.GameObjects
         {
             this.label = label;
             this.board = board;
-            this.availabelActions = new List<IGameAction>();
-
+            this.actions = new List<IGameAction>();
+        
         }
 
         public void AddAction(IGameAction action)
         {
-            if (availabelActions.Contains(action))
+            if (actions.Contains(action))
                 return;
-            action.linkTile(this);
-            availabelActions.Add(action);
+            action.LinkTile(this);
+            actions.Add(action);
         }
 
-        public void Buy(ITile tile)
+        public void Buy(IPlayer owner)
         {
-            throw new NotImplementedException();
+            this.owner = owner;
         }
 
         public List<IGameAction> GetActions()
         {
-            return availabelActions;
+            List<IGameAction> availableActions = new List<IGameAction>(actions.Where(x => x.IsAllowed()));
+            return availableActions;
         }
 
         public string GetLabel()
@@ -54,15 +55,27 @@ namespace Monopoly_Game.GameObjects
             return this.label;
         }
 
+        public IPlayer GetOwner()
+        {
+            return owner;
+        }
+
         public int GetPrice()
         {
             throw new NotImplementedException();
         }
 
+        public virtual int GetRent() 
+        {
+            return 0;
+        }
 
+        public bool IsOwned()
+        {
+            return owner == null ? false : true;
+        }
 
-
-    public abstract void Perfom();
+        public abstract void Perfom();
        
 
         public void Sell(ITile tile)

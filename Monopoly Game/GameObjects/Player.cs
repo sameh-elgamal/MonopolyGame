@@ -49,7 +49,9 @@ namespace Monopoly_Game.GameObjects
 
         public void Buy(ITile tile)
         {
-            throw new NotImplementedException();
+            tile.Buy(this);
+            //TODO: Adjust the money
+            //Player.PayMoney(Tile.GetPrice())
         }
 
         public int GetBalance()
@@ -196,6 +198,19 @@ namespace Monopoly_Game.GameObjects
             ITile tile = game.GetTileAt(position);
             tile.Perfom();
 
+        }
+
+        public void RecieveMoney(int amount)
+        {
+            Balance += amount;
+        }
+
+        public void PayMoney(int amount)
+        {
+            if (amount > Balance)
+                throw new GameException("Player has gone bankrupt");
+
+            Balance -= amount;
         }
     }
 }
