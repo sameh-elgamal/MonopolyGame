@@ -34,7 +34,7 @@ namespace Monopoly_Game.GameObjects.GameActions
             return tile;
         }
 
-        public bool IsAllowed()
+        public virtual bool IsAllowed()
         {
             return true;
         }

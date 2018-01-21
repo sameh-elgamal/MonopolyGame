@@ -35,5 +35,10 @@ namespace Monopoly_Game.GameObjects.GameActions
             player.TakeMoney(rent);
             owner.AddMoney(rent);
         }
+
+        public override bool IsAllowed()
+        {
+            return GetTile().IsOwned();
+        }
     }
 }
