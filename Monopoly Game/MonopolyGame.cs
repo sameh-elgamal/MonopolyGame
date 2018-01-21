@@ -83,7 +83,7 @@ namespace Monopoly_Game.GameObjects
             if (players.Contains(player))
             {
                 players.Remove(player);
-                player.unlink();
+                player.Unlink();
             }
         }
 
