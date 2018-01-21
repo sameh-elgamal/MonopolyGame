@@ -32,8 +32,8 @@ namespace Monopoly_Game.GameObjects.GameActions
 
             int rent = GetTile().GetRent();
 
-            player.PayMoney(rent);
-            owner.RecieveMoney(rent);
+            player.TakeMoney(rent);
+            owner.AddMoney(rent);
         }
     }
 }

@@ -140,7 +140,7 @@ namespace Monopoly_Game.GameObjects
             this.game = null;
         }
 
-        public void unlink()
+        public void Unlink()
         {
             this.game = null;
         }
@@ -201,12 +201,12 @@ namespace Monopoly_Game.GameObjects
 
         }
 
-        public void RecieveMoney(int amount)
+        public void AddMoney(int amount)
         {
             Balance += amount;
         }
 
-        public void PayMoney(int amount)
+        public void TakeMoney(int amount)
         {
             if (amount > Balance)
                 throw new GameException("Player has gone bankrupt");
