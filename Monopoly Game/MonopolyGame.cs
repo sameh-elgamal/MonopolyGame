@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 namespace Monopoly_Game.GameObjects
 {
-    
+
     public class MonopolyGame : IMonopolyGame
     {
         private List<IPlayer> players;
@@ -14,7 +14,7 @@ namespace Monopoly_Game.GameObjects
         private Dice dice;
 
 
-        
+
 
         public MonopolyGame()
         {
@@ -28,7 +28,7 @@ namespace Monopoly_Game.GameObjects
         }
 
 
-     
+
         /// <summary>
         /// Add Player to the game if player already assigned the function return without
         /// any action
@@ -57,7 +57,7 @@ namespace Monopoly_Game.GameObjects
          *  Return the number of players in the Game 
          *  0 when there is no player.
          * 
-         */ 
+         */
 
         public int CountPlayer()
         {
@@ -82,8 +82,8 @@ namespace Monopoly_Game.GameObjects
         {
             if (players.Contains(player))
             {
-               players.Remove(player);
-               player.unlink();
+                players.Remove(player);
+                player.unlink();
             }
         }
 
@@ -101,7 +101,7 @@ namespace Monopoly_Game.GameObjects
 
         public IPlayer GetCurrentPlayer()
         {
-                return players[currentPlayer];
+            return players[currentPlayer];
         }
 
         public IBank GetBank()
@@ -114,5 +114,10 @@ namespace Monopoly_Game.GameObjects
         {
             return dice.Roll();
         }
+    }
+
+    public enum ColorSets
+    {
+        brown, pink, orange, lightblue, green, blue, red, yellow
     }
 }

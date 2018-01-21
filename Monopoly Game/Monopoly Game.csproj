@@ -44,6 +44,9 @@
   <ItemGroup>
     <Compile Include="Bank.cs" />
     <Compile Include="GameExceptions\GameException.cs" />
+    <Compile Include="GameObjects\Deed.cs" />
+    <Compile Include="GameObjects\Properity.cs" />
+    <Compile Include="GameObjects\ProperityDeed.cs" />
     <Compile Include="GameObjects\Tiles\ActionTile.cs" />
     <Compile Include="GameObjects\Board.cs" />
     <Compile Include="GameObjects\Dice.cs" />

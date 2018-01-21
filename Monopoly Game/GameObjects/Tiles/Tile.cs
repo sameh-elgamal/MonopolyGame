@@ -29,7 +29,6 @@ namespace Monopoly_Game.GameObjects.Tiles
             this.label = label;
             this.board = board;
             this.actions = new List<IGameAction>();
-        
         }
 
         public void AddAction(IGameAction action)
